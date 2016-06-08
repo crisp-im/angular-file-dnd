@@ -63,7 +63,7 @@ angular.module('omr.angularFileDnD', [])
               scope.fileName = name if angular.isString scope.fileName
             if form
               form.$setDirty() #notify the form of this change
-            scope.$emit 'file-dropzone-drop-event', {file: scope.file, type: type, name: name, size: size}
+            scope.$emit 'file-dropzone-drop-event', {file: scope.file, originalFile: file, type: type, name: name, size: size}
 
         file = getDataTransfer(event).files[0]
         # Ensure that file will be an object.

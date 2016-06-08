@@ -71,6 +71,7 @@
               }
               return scope.$emit('file-dropzone-drop-event', {
                 file: scope.file,
+                originalFile: file,
                 type: type,
                 name: name,
                 size: size
