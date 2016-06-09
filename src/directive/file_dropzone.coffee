@@ -46,8 +46,6 @@ angular.module('omr.angularFileDnD', [])
       # event and specify copy as the allowable effect
       element.bind 'dragover', processDragOverOrEnter
       element.bind 'dragenter', processDragOverOrEnter
-      element.bind 'dragleave', ->
-        element.removeClass scope.dropzoneHoverClass
 
       # on drop events we stop browser and read the dropped file via the FileReader
       # the resulting droped file is bound to the image property of the scope of this directive

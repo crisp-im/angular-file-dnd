@@ -48,9 +48,6 @@
         };
         element.bind('dragover', processDragOverOrEnter);
         element.bind('dragenter', processDragOverOrEnter);
-        element.bind('dragleave', function() {
-          return element.removeClass(scope.dropzoneHoverClass);
-        });
         return element.bind('drop', function(event) {
           var file, name, reader, size, type;
           if (event != null) {
